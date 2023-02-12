@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".css">
+    <title>Document</title>
+    <style>
+        *{
+            background-image: linear-gradient(rgb(0, 195, 255),white);
+        }
+        p{
+            font-size: 25px;
+            font-weight: 900;
+            font-style: italic;
+        }
+        pre{
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>String........</h1>
+    <hr>
+    <div class="dm">
+        <div class="class"><p>Question 1:Count Characters</p><hr><br>
+        <pre>
+
+const countCharacters = (S) => 
+{
+let upper=0;
+let lower=0;
+for(let i=0;i < S.length;i++)
+{
+let ch === S.charAt(i);
+if(ch ===  'A')
+upper++;
+else if (ch ===S'D')
+{
+lower++;
+}
+}
+return [upper,lower];
+
+};
+             
+                    </pre></div>
+        <div class="class"><p>Question 2:Count the Heads</p><hr><br>
+        <pre>
+
+var Count_Occ = (s) => 
+{
+let map=new Map();
+
+map.set("a",0);
+map.set("b",0);
+map.set("c",0);
+map.set("d",0);
+map.set("e",0);
+map.set("f",0);
+map.set("g",0);
+map.set("h",0);
+map.set("i",0);
+map.set("j",0);
+map.set("k",0);
+map.set("l",0);
+map.set("m",0);
+map.set("n",0);
+map.set("o",0);
+map.set("p",0);
+map.set("q",0);
+map.set("r",0);
+map.set("s",0);
+map.set("t",0);
+map.set("u",0);
+map.set("v",0);
+map.set("w",0);
+map.set("x",0);a
+map.set("y",0);
+map.set("z",0);
+
+for(let i=0;i< s.length;i++)
+{
+let value=map.get(s[i]);
+map.set(s[i],value+1);
+}
+let res="";
+for(let [k,v] of map.entries()){
+if(v>1)
+{
+res=res+k+v;
+
+}
+}
+return res;
+};
+                        
+        </pre>
+                <br>
+</div>
+        <div class="class" id="three"><p>Question 3:Count the Vowels</p><hr><br>
+        <pre>
+
+var Count_Vowels= (S) => 
+{
+let sum=0;
+let vowels=['A','E','I','O','U','a','e','i','o','u'];
+for (let i=0;i< S.length;i++)
+{
+for(let j=0;j< vowels.length;j++)
+{
+if(S[i]= = = vowels[j])
+{
+    sum+=1;
+}
+}
+}
+return sum;
+};
+             
+            
+        </pre></div>
+        <div class="class"><p>Question 4:Concatenate the Strings</p><hr>
+        <pre>
+
+var Concatenate_Strings = (S1, S2) => 
+{
+return S1+S2;  
+};
+             
+    
+              
+        </pre></div>
+        <div class="class"><p>Qurstion 5:Find Length</p><hr>
+        <pre>
+
+const findLength = (S) => 
+{
+return S.length;
+};
+ </pre></div>
+        <div class="class"><p>Question 6:Find the Winner</p><hr>
+        <pre>
+ 
+var Game_Winner = (S) => 
+{
+let countOfA=0;
+let countOfD=0;
+for(i=0;i< S.length;i++)
+{
+if(S[i] ==="A")
+{
+    countOfA++;
+}
+else if(S[i]==="D")
+{
+    countOfD++;
+}
+}
+if(countOfA===countOfD)
+{
+return "Draw";
+}
+else if(countOfA > countOfD)
+{
+return "Aditya";
+}
+else if(countOfD > countOfA)
+{
+return "Danish";
+}
+}
+             
+                    
+        </pre></div>
+        <div class="class"><p>Question 7:Join Strings</p><hr>
+        <pre>
+
+const joinStrings = (S, P) => 
+{
+return S+P; 
+};
+             
+            
+        </pre></div>
+        <div class="class"><p>Question 8:Plaindrome Check</p><hr>
+        <pre>
+  
+var Palin_Check = (str) =>
+{
+const len=str.length;
+for(let i=0; i< len/2;i++)
+{
+if(str[i]!==str[len-1-i])
+{
+return 'False';
+}
+}
+return 'True'
+};
+
+
+        </pre></div>
+        <div class="class"><p>Question 9:Reverse the String</p><hr>
+        <pre>
+
+var Reverse_String = (str) => 
+{
+let newString=" ";
+for(let  i=str.length-1;i>=0;i--)
+{
+    newString += str[i];
+}
+return newString;
+};
+             
+            
+</pre></div>
+<div class="class"><p>Question 11:String Replace</p><hr>
+    <pre>
+
+var Replace = (S, pattern , text) => 
+{
+return S.replace(pattern,text);  
+};
+         
+        
+         </pre></div>
+         <div class="class"><p>Question 12:Split the String</p><hr>
+            <pre>
+        
+        
+var Split_the_string = (S) => 
+{
+  return S.split(" ");
+        
+};
+ 
+
+                 
+                
+                 </pre></div>
+                 <div class="class" id="last"><p>Question 13:Count the Vowels and Consonants</p><hr>
+                    <pre>
+                
+                
+var Count_Vowels= (S) => 
+{
+   let count=0;
+   for(let i=0;i< S.length;i++)
+   {
+   if (S[i]==="A" || S[i]==="E" S[i]==="I" || S[i]==="O" || S[i]==="U" || S[i]==="a" || S[i]==="e" || S[i]==="i" || S[i]==="o" || S[i]==="u")
+   {
+     count++;
+   }
+   }
+   return count;
+};
+var Count_Consonants= (S) => 
+{
+ let consonants=0;
+   for(let i=0;i< S.length;i++)
+   {
+   if (S[i]!=="A" || S[i]!=="E" S[i]!=="I" || S[i]!=="O" || S[i]!=="U" || S[i]!=="a" || S[i]!=="e" || S[i]!=="i" || S[i]!=="o"|| S[i]!=="u")
+   {
+     consonants++;
+   }
+   }
+   return consonants;      
+};
+ 
+
+         
+        
+                         
+                        
+                         </pre></div>
+    </div>
+</body>
+</html>
+
+
+
